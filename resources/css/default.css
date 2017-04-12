@@ -1,0 +1,261 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+body{
+	padding-top: 70px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #f5f5f5;
+}
+
+/* Navigation active page*/
+
+#home .home, #people .people, #research .research, 
+#resources .resources, #publications .publications,
+#press .press, #contactus .contactus, #gallery .gallery{
+	color: white;
+	font-weight: bold;
+	font-size: large;
+}
+
+/* carousel css */
+
+.carousel{
+	margin-top: 40px;
+}
+
+.carousel-indicators{
+	bottom: 0px;
+}
+
+.carousel .item img{
+	margin: 0px auto;
+	width: 250px;
+	height: 200px;
+}
+
+.carousel-control.left,
+.carousel-control.right{
+	background: transparent;
+}
+
+.glyphicon-chevron-left,
+.glyphicon-chevron-right{
+	color: #91b502;
+}
+
+/* accordian css*/
+
+.panel-title > a{
+	display: block;
+	padding: 10px 15px;
+}
+
+.panel-heading{
+	padding: 0px;
+}
+
+.panel-title > a:before{
+	float: right !important;
+	padding-right: 5px;
+	font-family: FontAwesome;
+	content: "\f056";
+}
+
+.panel-title > a.collapsed:before{
+	float: right !important;
+	content: "\f055";
+}
+
+.panel-title > a:hover,
+.panel-title > a:active,
+.panel-title > a:focus{
+	text-decoration: none;
+}
+
+p, .panel-body > ul > li{
+	font-size: 18px;	
+}
+
+.panel-body > ul > li{
+	list-style-type: circle;
+}
+
+#techlogo{
+	width: 180px;
+	height: 180px;
+}
+
+.box > .icon{
+	text-align: center;
+	position: relative;
+}
+
+.box > .icon > .image{
+	position: relative;
+	z-index: 2;
+	margin: auto;
+	width: 146px;
+	height: 146px;
+	border: 8px solid white;
+	border-radius: 50%;
+}
+
+.box > .icon > .image > img{
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+}
+
+.box > .icon > .info{
+	margin-top: -24px;
+	background: rgba(0,0,0,0.04);
+	border: 1px solid #e0e0e0;
+	padding: 15px 0 10px 0;
+}
+
+.info > p{
+	text-align: center;
+}
+
+.box .space{
+	height: 30px;
+}
+
+.navbar-brand span{
+	display: none;
+}
+
+.navbar-inverse .navbar-brand{
+	color: #02efef;	
+}
+
+.navbar-inverse .navbar-nav > li > a{
+color: #00ffdc;
+}
+
+nav{
+	background-image: url("images/header_background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Footer */
+
+footer{
+	height: 150px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+footer .container-fluid{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+footer div{
+	text-align: center;
+}
+
+footer #logo{
+	margin-top: 10px;
+}
+
+footer img{
+	height: 130px;
+}
+
+footer ul{
+	padding-left: 0px;
+}
+
+footer ul > li{
+	list-style-type: none;
+	display: block;
+	margin-bottom: 5px;
+	text-align: center; 
+}
+
+/* social icons */
+
+ul.social {list-style:none;}
+ul.social li {display:inline; padding: 0; margin:0 5px;}
+ul.social li a {display:inline-block; margi:0 auto; -moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%; text-align:center; width: 40px; height: 40px; font-size:20px; position:relative; background-color: #D3D3D3;}
+ul.social li a i {color:#FFF; text-align: center; margin:0; line-height:40px; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s; -ms-transition: all 0.8s; transition: all 0.8s;}
+ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg); -ms--transform: rotate(360deg);	transform: rotate(360deg);
+                         -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; -ms-transition: all 0.2s; transition: all 0.2s;}
+
+.social li a.rss:hover {background-color: #F56505;}
+.social li a.face:hover {background-color:#3B5998;}
+.social li a.twit:hover {background-color:#33ccff;}
+.social li a.google:hover {background-color:#BD3518;}
+.social li a.linkedin:hover {background-color:#007bb7;}
+
+/* for desktops */
+
+@media all and (min-width: 995px) {
+
+body{
+	padding-top: 110px;
+}
+
+footer ul > li{
+	display: inline-block;
+	padding-right: 5px;
+}
+
+.navbar{
+	height: 110px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+	
+nav .container{
+	height: 100%;
+	position: relative;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.navbar-brand{
+	margin: 25px;
+	font-size: 50px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.navbar-brand span{
+	font-size: 20px;
+	display: block;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+
+#navbar{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+.shrink{
+	height: 50px;
+}
+
+.shrink .navbar-brand{
+	margin: 0px;
+	font-size: 25px;
+}
+
+.shrink .navbar-brand span{
+	display: none;
+}
+
+}
